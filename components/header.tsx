@@ -53,6 +53,16 @@ export function Header() {
           >
             Home
           </Link>
+
+          <Link
+            href="/games"
+            className={`transition-colors duration-200 ${pathname === "/chat"
+                ? "text-teal-500 dark:text-teal-400"
+                : "text-slate-600 dark:text-slate-300 hover:text-teal-500 dark:hover:text-teal-400"
+              }`}
+          >
+            Small Games
+          </Link>
           
         </nav>
 
