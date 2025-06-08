@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Gamepad2, Waves, Palette, Target } from "lucide-react"
 import BubblePopGame from "@/components/games/bubble-pop-game"
-import ColorTherapyGame from "@/components/games/color-therapy-game"
+
 import ZenGardenGame from "@/components/games/zen-garden-game"
 import FocusGame from "@/components/games/focus-game"
 
@@ -84,10 +84,7 @@ export default function GamesPage() {
                   <Waves className="w-4 h-4" />
                   <span className="hidden sm:inline">Bubble Pop</span>
                 </TabsTrigger>
-                <TabsTrigger value="colors" className="flex items-center space-x-2">
-                  <Palette className="w-4 h-4" />
-                  <span className="hidden sm:inline">Color Therapy</span>
-                </TabsTrigger>
+                
                 <TabsTrigger value="garden" className="flex items-center space-x-2">
                   <div className="w-4 h-4 bg-green-500 rounded-full" />
                   <span className="hidden sm:inline">Zen Garden</span>
@@ -112,23 +109,7 @@ export default function GamesPage() {
                     <BubblePopGame />
                   </CardContent>
                 </Card>
-              </TabsContent>
-
-              <TabsContent value="colors">
-                <Card className="border-teal-200 dark:border-teal-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
-                  <CardContent className="p-6">
-                    <div className="text-center mb-6">
-                      <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-100 mb-2">
-                        Color Therapy Canvas
-                      </h2>
-                      <p className="text-slate-600 dark:text-slate-300">
-                        Paint with soothing colors to express yourself and find peace
-                      </p>
-                    </div>
-                    <ColorTherapyGame />
-                  </CardContent>
-                </Card>
-              </TabsContent>
+              </TabsContent>   
 
               <TabsContent value="garden">
                 <Card className="border-teal-200 dark:border-teal-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
