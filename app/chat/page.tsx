@@ -10,7 +10,6 @@ import { FloatingThemeToggle } from "@/components/floating-theme-toggle"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import ReactMarkdown from "react-markdown";
 
 const suggestedPrompts = [
   "How can I reduce stress at work?",
@@ -56,6 +55,7 @@ export default function Chat() {
       setResponse(data.result)
       setShowResponse(true)
     } catch (error) {
+      console.log(error)
       setResponse("Something went wrong. Please try again.")
       setShowResponse(true)
     } finally {
@@ -166,7 +166,7 @@ export default function Chat() {
                       Welcome to Your Mindful Space
                     </h3>
                     <p className="text-slate-600 dark:text-slate-300 max-w-md mb-6">
-                      I'm here to help you with meditation, breathing exercises, stress relief, and mindfulness
+                      I' m here to help you with meditation, breathing exercises, stress relief, and mindfulness
                       practices.
                     </p>
 

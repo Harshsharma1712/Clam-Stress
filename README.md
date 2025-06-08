@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Clam-Stress
 
-## Getting Started
+**Clam-Stress** is a calming and supportive web application designed to help people going through difficult times. Whether you're feeling stressed, anxious, or just bored, this app offers soothing visuals, interactive games, and friendly conversations powered by AI to help you feel better and more grounded.
 
-First, run the development server:
+---
+
+## 🌟 Features
+
+- 🧘‍♀️ **Soothing UI**: Beautifully designed calm-themed interface to promote peace of mind.
+- 💬 **Chat with AI Coach**: Users can chat with an AI-powered coach that offers encouragement, motivation, and comforting words.
+- 🎮 **Mini Games**: A collection of small, casual games to help users relax and distract from stress or boredom.
+- ✨ **Smooth Animations**: Uses Framer Motion for gentle transitions and smooth UI experience.
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js** – React framework for server-side rendering and performance.
+- **Gemini API** – For AI chat integration, offering empathetic and meaningful conversations.
+- **Tailwind CSS** – Utility-first CSS framework for fast and responsive styling.
+- **shadcn/ui** – Beautiful UI components for a clean and modern look.
+- **Framer Motion** – Animation library to create fluid and calm transitions.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/clam-stress.git
+cd clam-stress
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set up environment variables
+```bash
+NEXT_PUBLIC_GEMINI_API_KEY=your_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💖 Support
+If you or someone you know is going through a tough time, know that you're not alone. Clam-Stress is just a digital companion — don't hesitate to reach out to a real person or mental health professional when needed.
